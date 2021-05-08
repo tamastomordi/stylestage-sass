@@ -320,3 +320,6 @@ nav ul li a {
   top: 0.5em;
   left: 0.5em;
 }
+.skip-link:hover {
+  background-color: var(--clr-red) !important;
+}

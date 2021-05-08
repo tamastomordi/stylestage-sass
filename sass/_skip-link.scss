@@ -1,0 +1,15 @@
+.skip-link {
+   position: absolute;
+   left: -10000px;
+   background-color: var(--clr-blue);
+   padding: 0.4em 1em !important;
+   color: var(--clr-white) !important;
+   font-weight: 400 !important;
+   overflow: hidden;
+
+   &:focus {
+      position: fixed;
+      top: 0.5em;
+      left: 0.5em;
+   }
+}

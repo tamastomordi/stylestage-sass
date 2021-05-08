@@ -281,6 +281,9 @@ main ol li::before {
   align-items: center;
   font-size: var(--fs-ol);
 }
+main:focus {
+  outline: none;
+}
 
 nav {
   margin: 3em 0 8em;
@@ -301,4 +304,19 @@ nav ul li a {
   text-decoration: none;
   font-weight: var(--fw-medium);
   text-transform: uppercase;
+}
+
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  background-color: var(--clr-blue);
+  padding: 0.4em 1em !important;
+  color: var(--clr-white) !important;
+  font-weight: 400 !important;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed;
+  top: 0.5em;
+  left: 0.5em;
 }

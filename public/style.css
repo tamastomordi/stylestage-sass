@@ -323,3 +323,45 @@ nav ul li a {
 .skip-link:hover {
   background-color: var(--clr-red) !important;
 }
+
+.profile {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 18em;
+  position: absolute;
+  top: calc(100vh + 0.5em);
+  right: 0.5em;
+  color: var(--clr-white);
+  padding: 1em;
+  font-weight: var(--fw-light);
+}
+.profile a {
+  color: white !important;
+  text-decoration: underline 2px var(--clr-red) !important;
+  text-underline-offset: 0.1em;
+  transition: background-color 300ms, text-decoration-color 300ms !important;
+}
+.profile a:hover, .profile a:focus {
+  text-decoration-color: transparent !important;
+}
+.profile ul {
+  list-style-type: none;
+  padding: 0;
+}
+.profile ul li {
+  display: flex;
+  padding: 0.25em 0;
+}
+.profile ul li span:nth-child(1) {
+  width: 8ch;
+  margin-right: 0.25em;
+}
+.profile .container > a {
+  background-color: var(--clr-blue);
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-weight: 400;
+  text-decoration: none !important;
+}
+.profile .container > a:hover {
+  background-color: var(--clr-red);
+}

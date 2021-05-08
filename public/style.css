@@ -200,11 +200,21 @@ header h1::after {
 header h2 {
   font-size: var(--fs-h2-header);
   padding: 1em 0;
+  font-weight: var(--fw-light);
 }
 header p {
   font-style: italic;
   font-weight: var(--fw-light);
   margin-bottom: 1em;
+}
+header p a {
+  color: white !important;
+  text-decoration: underline 2px var(--clr-red) !important;
+  text-underline-offset: 0.1em;
+  transition: background-color 300ms, text-decoration-color 300ms !important;
+}
+header p a:hover, header p a:focus {
+  text-decoration-color: transparent !important;
 }
 
 main {
@@ -212,6 +222,18 @@ main {
 }
 main h2 {
   margin: 1.25em 0 0.5em;
+  padding-left: 0.5em;
+  position: relative;
+}
+main h2:before {
+  content: "";
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top: -0.5em;
+  left: 0;
+  z-index: -1;
+  background-image: repeating-linear-gradient(45deg, #d8c1a9, #d8c1a9 5px, transparent 5px, transparent 20px);
 }
 main p {
   margin: 0.75em 0;
@@ -249,7 +271,7 @@ main ol li::before {
 }
 
 nav {
-  margin: 3em 0 5em;
+  margin: 3em 0 8em;
   position: relative;
 }
 nav ul {

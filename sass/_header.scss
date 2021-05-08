@@ -32,11 +32,24 @@ header {
    h2 {
       font-size: var(--fs-h2-header);
       padding: 1em 0;
+      font-weight: var(--fw-light);
    }
 
    p {
       font-style: italic;
       font-weight: var(--fw-light);
       margin-bottom: 1em;
+
+      a {
+         color: white !important;
+         text-decoration: underline 2px var(--clr-red) !important;
+         text-underline-offset: 0.1em;
+         transition: background-color 300ms, 
+         text-decoration-color 300ms !important;
+
+         &:hover, &:focus {
+            text-decoration-color: transparent !important;
+         }
+      }
    }
 }

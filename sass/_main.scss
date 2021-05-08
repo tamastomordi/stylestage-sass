@@ -1,4 +1,6 @@
 main {
+   padding-bottom: 10rem; //temporary
+
    h2 {
       margin: 1.25em 0 0.5em;
    }
@@ -14,5 +16,31 @@ main {
       padding: 0.5em 2em;
       font-style: italic;
       font-size: var(--fs-bq);
+   }
+
+   ol {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+         counter-increment: step-counter;
+         position: relative;
+         padding-left: 2.5em;
+         margin: 1.5em 0;
+      }
+
+      li::before {
+         content: counter(step-counter);
+         position: absolute;
+         left: 0;
+         background-color: var(--clr-darker);
+         color: white;
+         width: 1.5rem;
+         height: 1.5rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: var(--fs-ol);
+      }
    }
 }

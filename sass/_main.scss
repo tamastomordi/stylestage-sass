@@ -2,7 +2,7 @@ main {
    padding-bottom: 10rem; //temporary
 
    h2 {
-      margin: 1.25em 0 0.5em;
+      margin: 3em 0 1em;
       padding-left: 0.5em;
       position: relative;
 
@@ -34,6 +34,20 @@ main {
       padding: 0.5em 2em;
       font-style: italic;
       font-size: var(--fs-bq);
+   }
+
+   ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+         margin: 0.4em;
+         padding: 0.2em 0.5em;
+         background-color: var(--clr-darker);
+         color: var(--clr-white);
+      }
    }
 
    ol {

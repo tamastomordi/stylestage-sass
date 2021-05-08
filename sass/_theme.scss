@@ -5,7 +5,7 @@
    --clr-dark: #8C6D51;
    --clr-light: #BF9A78;
    --clr-lighter: #e9dbcd;
-   --clr-red: #8C2C23;
+   --clr-red: #b6382c;
    --clr-blue: #304C5F;
    --clr-white: #fff;
    --clr-black: #000;
@@ -14,11 +14,13 @@
    --ff-base: 'Roboto', sans-serif;
 
    --fs-h1: 6rem;
-   --fs-h2: 3rem;
+   --fs-h2-main: 3rem;
+   --fs-h2-header: 2rem;
    --fs-h3: 2rem;
    --fs-h4: 1.35rem;
    --fs-base: 1.15rem;
 
-   --fw-strong: 500;
-   --fw-stronger: 700;
+   --fw-light: 300;
+   --fw-medium: 500;
+   --fw-bold: 700;
 }

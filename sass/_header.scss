@@ -1,0 +1,42 @@
+header {
+   background-image: url(../images/old-letters-436501_1920.jpg); // don't forget to set absolute path!
+   background-size: cover;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .container {
+      padding: 5em 2em;
+      text-align: center;
+      background-color: rgba(0,0,0,0.9);
+      color: var(--clr-white);
+   }
+   
+   h1 {
+      position: relative;
+      padding-bottom: 0.25em;
+   }
+
+   h1::after {
+      content: '';
+      height: 3px;
+      width: 5rem;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--clr-white);
+   }
+
+   h2 {
+      font-size: var(--fs-h2-header);
+      padding: 1em 0;
+   }
+
+   p {
+      font-style: italic;
+      font-weight: var(--fw-light);
+      margin-bottom: 1em;
+   }
+}

@@ -1,6 +1,14 @@
 #styles {
+   .container {
+      margin-right: 0;
+      margin-left: auto;
+      margin-top: 8rem;
+      max-width: 28rem;
+   }
+
    h2 {
-      margin: 3em 0 1em;
+      grid-area: styles;
+      margin-bottom: 1em;
       padding-left: 0.5em;
       position: relative;
 

@@ -1,4 +1,7 @@
 body {
+   display: grid;
+   grid-template-areas: "header header" "nav nav" "main main" "styles profile" "footer footer";
+   grid-template-columns: 1fr 1fr;
    font-family: var(--ff-base);
    background-color: var(--clr-lighter);
    color: var(--clr-darker);

@@ -7,7 +7,8 @@ body {
 
 header > .container, 
 main > .container,
-footer:not(#files) > .container {
+footer:not(#files) > .container,
+#styles > .container {
    max-width: 56rem;
    padding: 0 1.5rem;
    margin: 0 auto;

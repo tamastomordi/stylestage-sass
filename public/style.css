@@ -386,3 +386,35 @@ nav ul li a {
 #styles ul li {
   margin: 0.5em 0;
 }
+
+.page-footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  margin-top: 6em;
+  padding: 2em 0;
+  font-weight: var(--fw-light);
+}
+.page-footer p {
+  margin: 0.75em 0;
+}
+.page-footer a:not([class^=link]) {
+  color: white !important;
+  text-decoration: underline 2px var(--clr-red) !important;
+  text-underline-offset: 0.1em;
+  transition: background-color 300ms, text-decoration-color 300ms !important;
+}
+.page-footer a:not([class^=link]):hover, .page-footer a:not([class^=link]):focus {
+  text-decoration-color: transparent !important;
+}
+.page-footer [class^=link] {
+  font-weight: 400;
+}
+.page-footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-footer ul li {
+  margin-right: 0.5em;
+}

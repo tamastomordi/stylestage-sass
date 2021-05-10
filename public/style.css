@@ -120,18 +120,6 @@ footer:not(#files) > .container,
   margin: 0 auto;
 }
 
-a:not([class^=link]) {
-  color: var(--clr-red);
-  text-decoration: none;
-  font-weight: var(--fw-medium);
-  transition: color 300ms, background-color 300ms;
-  padding: 0 0.2em;
-}
-a:not([class^=link]):hover, a:not([class^=link]):focus {
-  color: var(--clr-white);
-  background-color: var(--clr-blue);
-}
-
 h1, h2, h3, h4 {
   font-family: var(--ff-headers);
 }
@@ -154,22 +142,42 @@ h4 {
   font-size: var(--fs-h4);
 }
 
-[class^=link] {
+a:not([class^=link]) {
+  color: var(--clr-red);
+  text-decoration: none;
+  font-weight: var(--fw-medium);
+  transition: color 300ms, background-color 300ms;
+  padding: 0 0.2em;
+}
+a:not([class^=link]):hover, a:not([class^=link]):focus {
+  color: var(--clr-white);
+  background-color: var(--clr-blue);
+  text-decoration-color: transparent !important;
+}
+
+header a:not([class^=link]), .page-footer a:not([class^=link]), .profile a:not([class^=link]) {
+  color: var(--clr-white);
+  text-decoration: underline 2px var(--clr-red);
+  text-underline-offset: 0.1em;
+  transition: background-color 300ms, text-decoration-color 300ms;
+}
+
+[class^=link], .profile .container > a {
   text-decoration: none;
   color: var(--clr-white);
   background-color: var(--clr-blue);
   display: inline-block;
   padding: 0.5em 1.5em;
-  margin: 1em 0;
+  margin-top: 1em;
   transition: background-color 300ms;
 }
-[class^=link] svg {
+[class^=link] svg, .profile .container > a svg {
   fill: white;
   margin-right: 0.5em;
   width: 1.5rem;
   vertical-align: top;
 }
-[class^=link]:hover, [class^=link]:focus {
+[class^=link]:hover, [class^=link]:focus, .profile .container > a:hover, .profile .container > a:focus {
   background-color: var(--clr-red);
 }
 
@@ -211,15 +219,6 @@ header p {
   font-style: italic;
   font-weight: var(--fw-light);
   margin-bottom: 1em;
-}
-header p a {
-  color: white !important;
-  text-decoration: underline 2px var(--clr-red) !important;
-  text-underline-offset: 0.1em;
-  transition: background-color 300ms, text-decoration-color 300ms !important;
-}
-header p a:hover, header p a:focus {
-  text-decoration-color: transparent !important;
 }
 
 main {
@@ -291,7 +290,7 @@ main:focus {
 }
 
 nav {
-  margin: 3em 0 8em;
+  margin: 3em 0 1em;
   position: relative;
   grid-area: nav;
 }
@@ -307,7 +306,6 @@ nav ul {
 nav ul li a {
   margin: 1em 1.35em;
   padding: 0.4em !important;
-  text-decoration: none;
   font-weight: var(--fw-medium);
   text-transform: uppercase;
 }
@@ -315,9 +313,7 @@ nav ul li a {
 .skip-link {
   position: absolute;
   left: -10000px;
-  background-color: var(--clr-blue);
   padding: 0.4em 1em !important;
-  color: var(--clr-white) !important;
   font-weight: 400 !important;
   overflow: hidden;
 }
@@ -340,15 +336,6 @@ nav ul li a {
   padding: 1em;
   font-weight: var(--fw-light);
 }
-.profile a {
-  color: white !important;
-  text-decoration: underline 2px var(--clr-red) !important;
-  text-underline-offset: 0.1em;
-  transition: background-color 300ms, text-decoration-color 300ms !important;
-}
-.profile a:hover, .profile a:focus {
-  text-decoration-color: transparent !important;
-}
 .profile ul {
   list-style-type: none;
   padding: 0;
@@ -361,23 +348,13 @@ nav ul li a {
   width: 8ch;
   margin-right: 0.25em;
 }
-.profile .container > a {
-  background-color: var(--clr-blue);
-  display: inline-block;
-  padding: 0.5em 1em;
-  font-weight: 400;
-  text-decoration: none !important;
-}
-.profile .container > a:hover {
-  background-color: var(--clr-red);
-}
 @media screen and (max-width: 110em) {
   .profile {
     position: static;
     grid-area: profile;
     margin-right: auto;
     margin-left: 0;
-    margin-top: 6.5rem;
+    margin-top: 7.5rem;
     max-width: 28rem;
     width: 100%;
     padding: 2em;
@@ -387,7 +364,7 @@ nav ul li a {
 #styles .container {
   margin-right: 0;
   margin-left: auto;
-  margin-top: 8rem;
+  margin-top: 9rem;
   max-width: 28rem;
 }
 #styles h2 {
@@ -442,6 +419,7 @@ nav ul li a {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 2em;
 }
 .page-footer ul li {
   margin-right: 0.5em;

@@ -17,19 +17,6 @@ footer:not(#files) > .container,
    margin: 0 auto;
 }
 
-a:not([class^="link"]) {
-   color: var(--clr-red);
-   text-decoration: none;
-   font-weight: var(--fw-medium);
-   transition: color 300ms, background-color 300ms;
-   padding: 0 0.2em;
-
-   &:hover, &:focus {
-      color: var(--clr-white);
-      background-color: var(--clr-blue);
-   }
-}
-
 h1, h2, h3, h4 {
    font-family: var(--ff-headers);
 }
@@ -50,26 +37,5 @@ h3 {
 
 h4 {
    font-size: var(--fs-h4);
-}
-
-[class^="link"] {
-   text-decoration: none;
-   color: var(--clr-white);
-   background-color: var(--clr-blue);
-   display: inline-block;
-   padding: 0.5em 1.5em;
-   margin: 1em 0;
-   transition: background-color 300ms;
-
-   svg {
-      fill: white;
-      margin-right: 0.5em;
-      width: 1.5rem;
-      vertical-align: top;
-   }
-
-   &:hover, &:focus {
-      background-color: var(--clr-red);                  
-   }
 }
 

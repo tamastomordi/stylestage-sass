@@ -1,12 +1,15 @@
 .profile {
-   background-color: rgba(0,0,0,0.9);
-   width: 18em;
    position: absolute;
    top: calc(100vh + 0.5em);
    right: 0.5em;
    color: var(--clr-white);
-   padding: 1em;
    font-weight: var(--fw-light);
+
+   .container {
+      width: 18em;
+      padding: 1em;
+      background-color: rgba(0,0,0,0.9);
+   }
 
    ul {
       list-style-type: none;
@@ -24,13 +27,16 @@
    }
 
    @media screen and (max-width: 110em) {
-      position: static;
       grid-area: profile;
-      margin-right: auto;
-      margin-left: 0;
-      margin-top: 7.5rem;
-      max-width: 28rem;
-      width: 100%;
-      padding: 2em;
+      position: static;
+      padding-right: 1.5rem;
+
+      .container {
+         padding: 2em;
+         width: 24rem;
+         margin-left: 0;
+         margin-right: auto;
+         margin-top: 7.5rem;
+      }
    }
 }

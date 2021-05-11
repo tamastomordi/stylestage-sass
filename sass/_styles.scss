@@ -37,4 +37,11 @@
          margin: 0.5em 0;
       }
    }
+
+   @media screen and (max-width: 50rem) {
+      .container {
+         margin: 5em auto 0;
+         padding: 1.5rem;
+      }
+   }
 }

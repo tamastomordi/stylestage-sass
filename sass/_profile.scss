@@ -26,17 +26,27 @@
        }
    }
 
-   @media screen and (max-width: 110em) {
+   @media screen and (max-width: 110rem) {
       grid-area: profile;
-      position: static;
-      padding-right: 1.5rem;
+      position: static;   
+      padding: 1.5rem;  
 
       .container {
          padding: 2em;
-         width: 24rem;
+         max-width: 25rem;
+         width: auto;
          margin-left: 0;
          margin-right: auto;
-         margin-top: 7.5rem;
+         margin-top: 7.5rem;         
+      }
+   }
+
+   @media screen and (max-width: 50rem) {
+     margin-top: 5em;
+     width: 100vw;
+
+      .container {
+         margin: 0 auto;
       }
    }
 }

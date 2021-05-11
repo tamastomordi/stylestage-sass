@@ -110,10 +110,15 @@ body {
   color: var(--clr-darker);
   font-size: var(--fs-base);
 }
+@media screen and (max-width: 50rem) {
+  body {
+    display: block;
+  }
+}
 
 header > .container,
 main > .container,
-footer:not(#files) > .container,
+.page-footer > .container,
 #styles > .container {
   max-width: 56rem;
   padding: 0 1.5rem;
@@ -350,18 +355,28 @@ nav ul li a {
   width: 8ch;
   margin-right: 0.25em;
 }
-@media screen and (max-width: 110em) {
+@media screen and (max-width: 110rem) {
   .profile {
     grid-area: profile;
     position: static;
-    padding-right: 1.5rem;
+    padding: 1.5rem;
   }
   .profile .container {
     padding: 2em;
-    width: 24rem;
+    max-width: 25rem;
+    width: auto;
     margin-left: 0;
     margin-right: auto;
     margin-top: 7.5rem;
+  }
+}
+@media screen and (max-width: 50rem) {
+  .profile {
+    margin-top: 5em;
+    width: 100vw;
+  }
+  .profile .container {
+    margin: 0 auto;
   }
 }
 
@@ -393,6 +408,12 @@ nav ul li a {
 }
 #styles ul li {
   margin: 0.5em 0;
+}
+@media screen and (max-width: 50rem) {
+  #styles .container {
+    margin: 5em auto 0;
+    padding: 1.5rem;
+  }
 }
 
 .page-footer {

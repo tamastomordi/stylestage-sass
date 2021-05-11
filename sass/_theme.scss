@@ -8,7 +8,7 @@
    --clr-red: #b6382c;
    --clr-blue: #304C5F;
    --clr-white: #fff;
-   --clr-black: #000;
+   --clr-black-transparent: rgba(0,0,0,0.9);
 
    --ff-headers: 'Lora', serif;
    --ff-base: 'Roboto', sans-serif;
@@ -23,6 +23,6 @@
    --fs-ol: 0.8rem;
 
    --fw-light: 300;
+   --fw-regular: 400;
    --fw-medium: 500;
-   --fw-bold: 700;
 }

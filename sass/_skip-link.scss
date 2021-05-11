@@ -2,7 +2,7 @@
    position: absolute;
    left: -10000px;
    padding: 0.4em 1em !important;
-   font-weight: 400 !important;
+   font-weight: var(--fw-regular) !important;
    overflow: hidden;
 
    &:focus {
